@@ -1,68 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>OU Walking Club</title>
-    <link rel="stylesheet" href="q2a.css"/>
-    <meta name="Janine OConnor" content="jo4669"/>
-  </head>
-  <body>
-    <header>
-       <!--Navigation Menu-->
-    <div class="nav">
-      <a href = "index.html" id = "main">
-        OU Walking Club
-      </a>
-      <a href = "placeholder.html" class = "other">
-        Walk Events
-      </a>
-      <a href = "placeholder.html" class = "other">
-        Other Events
-      </a>
-      <a href = "placeholder.html" class = "other">
-        Membership
-      </a>
-      <a href = "placeholder.html" class = "other">
-        News Items
-      </a>
-      <a href = "placeholder.html" class = "other">
-        Announcements
-      </a>
-    </div>
-    </header>
-    <!--Title of the website-->
-      <h1>Create an Announcement</h1>
-      <div class="form">
-      <form method="POST" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
-        <p>
-          <label for="mytext1">Announcement Subject Line</label>
-          <input type="text" name="mytext1" id="mytext1" />
-        </p>
-        <p>
-            <label for="mytext1">From</label>
-            <input type="text" name="mytext1" id="mytext1" />
-        </p>
-        <p>
-            <label for="myfile">Announcement</label>
-            <input type="file" id="myfile" name="myfile">
-        </p>
+body {
+    background-color: beige;
+}
 
-        <p>
-            <label for="mytext1">Date</label>
-            <input type="date" name="mytext1" id="mytext1" />
-          </p>
-        <p>
-            <input
-            type="hidden"
-            name="sessionIdentifier"
-            id="myhidden"
-            value="e32-ff67-abcd1234-9090e"
-          />
-        </p>
-        <div class="button"></div>
-        <p>
-          <input type="submit" name="submit" value="Create" />
-        </p>
-        </div>
-      </form>
-      </div>
+div.nav{
+    text-align: center;
+}
+
+a.other{
+    text-align: center;
+    padding-left: 3em;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+a#main{
+    text-align: center;
+    padding-left: 3em;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a.other:hover{
+    font-size: larger;
+    color: cornflowerblue;
+}
+
+a#main:hover{
+    font-size: larger;
+    color: cornflowerblue;
+}
+
+div.form{
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+
+form {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: 4px solid hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+div.button{
+   display: flex;
+   justify-content: center;
+    
+}
+
+.form input[type=submit]{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #3c87ea;
+	color: #fff;
+	box-shadow: 1px 1px 3px #DADADA;
+	-moz-box-shadow: 1px 1px 3px #DADADA;
+	-webkit-box-shadow: 1px 1px 3px #DADADA;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.form input[type=submit]:hover{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #f78e2c;
+	color: #fff;
+	box-shadow: 1px 1px 3px #DADADA;
+	-moz-box-shadow: 1px 1px 3px #DADADA;
+	-webkit-box-shadow: 1px 1px 3px #DADADA;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.form input[type=text],
+.form input[type=date] {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 3px #EBEBEB;
+	-moz-box-shadow: 1px 1px 3px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 3px #EBEBEB;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 7px;
+	outline: none;
+}
+
+.form input[type=text]:hover,
+.form input[type=date]:hover{
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #0664fc;
+	box-shadow: 1px 1px 3px #0664fc;
+	-moz-box-shadow: 1px 1px 3px #0664fc;
+	-webkit-box-shadow: 1px 1px 3px #0664fc;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 7px;
+	outline: none;
+}
