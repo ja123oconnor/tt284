@@ -50,7 +50,7 @@
             <input type="text" name="mytext1" id="mytext1" />
           </p>
         <p>
-          <label for="mytext2">SessionIdentifier</label>
+          <label for="mytext2">Session Identifier</label>
           <input type="text" name="mytext2" id="mytext2" value="ee32-ff67-abcd1234-9090" />
         </p>
         <p>
