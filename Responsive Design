@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OU Walking Club</title>
+    <link rel="stylesheet" href="q2a.css"/>
+    <meta name="Janine OConnor" content="jo4669"/>
+  </head>
+  <body>
+    <header>
+       <!--Navigation Menu-->
+      <a href = "index.html" id = "main">
+        OU Walking Club
+      </a>
+      <a href = "placeholder.html" class = "other">
+        Walk Events
+      </a>
+      <a href = "placeholder.html" class = "other">
+        Other Events
+      </a>
+      <a href = "placeholder.html" class = "other">
+        Membership
+      </a>
+      <a href = "placeholder.html" class = "other">
+        News Items
+      </a>
+      <a href = "placeholder.html" class = "other">
+        Announcements
+      </a>
+      
+    </header>
+    <!--Title of the website-->
+      <h1>Create an Announcement</h1>
+      <form method="POST" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <p>
+          <label for="mytext1">Announcement Subject</label>
+          <input type="text" name="mytext1" id="mytext1" />
+        </p>
+        <p>
+            <label for="mytext1">From</label>
+            <input type="text" name="mytext1" id="mytext1" />
+        </p>
+        <p>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </p>
+
+        <p>
+            <label for="mytext1">Date</label>
+            <input type="text" name="mytext1" id="mytext1" />
+          </p>
+        <p>
+          <label for="mytext2">SessionIdentifier</label>
+          <input type="text" name="mytext2" id="mytext2" value="ee32-ff67-abcd1234-9090" />
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Create" />
+        </p>
+      </form>
