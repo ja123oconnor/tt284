@@ -9,6 +9,7 @@
   <body>
     <header>
        <!--Navigation Menu-->
+    <div class="nav">
       <a href = "index.html" id = "main">
         OU Walking Club
       </a>
@@ -27,13 +28,14 @@
       <a href = "placeholder.html" class = "other">
         Announcements
       </a>
-      
+    </div>
     </header>
     <!--Title of the website-->
       <h1>Create an Announcement</h1>
+      <div class="form">
       <form method="POST" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php">
         <p>
-          <label for="mytext1">Announcement Subject</label>
+          <label for="mytext1">Announcement Subject Line</label>
           <input type="text" name="mytext1" id="mytext1" />
         </p>
         <p>
@@ -41,19 +43,26 @@
             <input type="text" name="mytext1" id="mytext1" />
         </p>
         <p>
-            <label for="myfile">Select a file:</label>
+            <label for="myfile">Announcement</label>
             <input type="file" id="myfile" name="myfile">
         </p>
 
         <p>
             <label for="mytext1">Date</label>
-            <input type="text" name="mytext1" id="mytext1" />
+            <input type="date" name="mytext1" id="mytext1" />
           </p>
         <p>
-          <label for="mytext2">Session Identifier</label>
-          <input type="text" name="mytext2" id="mytext2" value="ee32-ff67-abcd1234-9090" />
+            <input
+            type="hidden"
+            name="sessionIdentifier"
+            id="myhidden"
+            value="e32-ff67-abcd1234-9090e"
+          />
         </p>
+        <div class="button"></div>
         <p>
           <input type="submit" name="submit" value="Create" />
         </p>
+        </div>
       </form>
+      </div>
